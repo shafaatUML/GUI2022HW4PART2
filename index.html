@@ -1,0 +1,47 @@
+<!-- HTML file to simulate a multiplication table generated from user inputs within a field as well as slider
+Shafaat Osmani Shafaat_Osmani@student.uml.edu -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+   <title>MultTable</title>
+    <!-- JS and JQuery scripts -->
+   <script src="./js/js.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+   <!-- HEADER -->
+   <p>
+   <h1> MULTIPLICATION TABLE</h1>
+   </p>
+   <!-- FORM -->
+   <!-- Y = col, X = row -->
+   <form id="multform">
+      <label>MinX<br></label><input type="text" id="minX" name="minX"><br>
+      <div id = "minXslider"></div>
+      <label>MaxX<br></label><input type="text" id="maxX" name="maxX"><br>
+      <div id = "maxXslider"></div>
+      <label>MinY<br></label><input type="text" id="minY" name="minY"><br>
+      <div id = "minYslider"></div>
+      <label>MaxY<br></label><input type="text" id="maxY" name="maxY"><br>
+      <div id = "maxYslider"></div>
+      <input type="submit" value="Calculate">
+   </form>
+   <!-- source: https://jqueryui.com/tabs/#default -->
+   <div id="myTabs">
+  <ul>
+    <li><a href="#tabs-1">Mult Table</a></li>
+  </ul>
+  <div id="Mult Table">
+    </div>
+   <div class="scroll">
+      <div id="multtable"></div>
+   </div>
+</body>
+</html>
